@@ -3,11 +3,41 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
         <link href="./dist/output.css" rel="stylesheet" />
-        <title>myteam</title>
+        <title>MyTeam</title>
     </head>
-    <body></body>
+    <body class="font-livvic text-white font-semibold">
+        <header class="bg-primary-1 pt-10">
+            <nav class="container flex justify-between items-center mx-auto px-5">
+                <div class="flex items-center gap-10">
+                    <a href="#!" class="hidden md:block"><img src="./src/images/myteam.svg" alt="" /></a>
+                    <a href="#!" class="md:hidden"><img src="./src/images/myteam-mobile.png" alt="" /></a>
+                    <ul class="hidden md:flex gap-7">
+                        <li><a href="#!" class="text-[18px] hover:text-primary-2 transition-colors duration-300">home</a></li>
+                        <li><a href="#!" class="text-[18px] hover:text-primary-2 transition-colors duration-300">about</a></li>
+                    </ul>
+                </div>
+                <a href="#!" class="hidden justify-center items-center w-[153px] h-[46px] border-2 rounded-4xl hover:bg-white hover:text-secondary-5 transition-colors duration-300 md:flex">contact us</a>
+
+                <i id="menuButton" class="fa-solid fa-bars text-2xl md:hidden"></i>
+                <div id="menuOverlay" class="fixed top-0 left-0 w-full h-full bg-black/80 bg-opacity-50 hidden z-40"></div>
+                <div id="mobileMenu" class="fixed top-0 right-0 h-full w-[70%] bg-secondary-2 p-5 transform translate-x-full transition-transform z-50">
+                    <i id="closeButton" class="fa-solid fa-close absolute top-10 right-10 mb-5 text-white text-3xl"></i>
+                    <ul class="flex flex-col gap-8 py-20 px-8">
+                        <li><a href="#!" class="text-[18px] hover:text-primary-2 transition-colors duration-300">home</a></li>
+                        <li><a href="#!" class="text-[18px] hover:text-primary-2 transition-colors duration-300">about</a></li>
+                        <li><a href="#!" class="flex justify-center items-center w-[159px] h-[48px] border-2 rounded-4xl text-[18px]">contact us</a></li>
+                    </ul>
+
+                    <img src="./src/images/menu-circle.png" alt="" class="absolute bottom-0 right-0" />
+                </div>
+            </nav>
+        </header>
+
+        <script src="./src/scripts/script.js"></script>
+    </body>
 </html>
