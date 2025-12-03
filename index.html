@@ -23,7 +23,9 @@
                 </div>
                 <a href="#!" class="hidden justify-center items-center w-[153px] h-[46px] border-2 rounded-4xl hover:bg-white hover:text-secondary-5 transition-colors duration-300 md:flex">contact us</a>
 
-                <i id="menuButton" class="fa-solid fa-bars text-2xl md:hidden"></i>
+                <button id="menuButton" class="md:hidden">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
                 <div id="menuOverlay" class="fixed top-0 left-0 w-full h-full bg-black/80 bg-opacity-50 hidden z-40"></div>
                 <div id="mobileMenu" class="fixed top-0 right-0 h-full w-[70%] bg-secondary-2 p-5 transform translate-x-full transition-transform z-50">
                     <i id="closeButton" class="fa-solid fa-close absolute top-10 right-10 mb-5 text-white text-3xl"></i>
@@ -37,7 +39,22 @@
                 </div>
             </nav>
         </header>
+        <main>
+            <section class="bg-primary-1 pt-15 relative">
+                <div class="container mx-auto flex flex-col gap-4 text-center md:flex-row md:items-center md:justify-between md:text-left md:py-20 px-5">
+                    <div class="md:w-[90%]">
+                        <h1 class="font-bold text-[40px] leading-10 md:text-8xl md:leading-24">Find the <span class="block"></span> best <span class="text-primary-2">talent</span></h1>
+                    </div>
 
+                    <div class="flex flex-col gap-20 md:w-[40%]">
+                        <div class="hidden w-12 h-1 bg-secondary-1 md:block"></div>
+                        <p class="text-[15px] leading-7 md:text-xl">Finding the right people and building high performing teams can be hard. Most companies aren’t tapping into the abundance of global talent. We’re about to change that.</p>
+                    </div>
+                </div>
+
+                <img src="./src/images/circle-main-mobile.png" alt="" class="mx-auto mt-20" />
+            </section>
+        </main>
         <script src="./src/scripts/script.js"></script>
     </body>
 </html>
